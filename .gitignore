@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+outputs/
+*.mp3
+*.m4a
+*.webm
+*.vtt
+*.srt
+*.info.json

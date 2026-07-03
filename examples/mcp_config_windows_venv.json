@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ai-research-skill": {
+      "command": "C:\\path\\to\\ai-research-skill\\.venv\\Scripts\\python.exe",
+      "args": ["-m", "ai_research_skill.mcp_server"]
+    }
+  }
+}

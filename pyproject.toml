@@ -1,0 +1,33 @@
+[project]
+name = "ai-research-skill"
+version = "0.1.0"
+description = "Local AI research skill: web/YouTube search, transcripts, comments and MCP tools."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Your Name" }]
+dependencies = [
+  "mcp>=1.0.0",
+  "typer>=0.12.0",
+  "rich>=13.0.0",
+  "pydantic>=2.0.0",
+  "requests>=2.31.0",
+  "beautifulsoup4>=4.12.0",
+  "youtube-transcript-api>=1.2.0",
+  "yt-dlp>=2025.1.0"
+]
+
+[project.optional-dependencies]
+local-transcribe = [
+  "faster-whisper>=1.0.0"
+]
+
+[project.scripts]
+ai-research = "ai_research_skill.cli:app"
+ai-research-mcp = "ai_research_skill.mcp_server:main"
+
+[tool.ruff]
+line-length = 100
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

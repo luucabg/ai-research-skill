@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "ai-research-skill": {
+      "command": "ai-research-mcp"
+    }
+  }
+}
