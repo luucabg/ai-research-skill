@@ -31,6 +31,16 @@ It can be used in two ways:
 
 The main goal is **automatic AI tool mode**. Manual mode exists as a fallback because it works everywhere.
 
+
+## Is this a Skill or an MCP tool?
+
+Both, but they are not the same thing.
+
+- `SKILL.md` tells an AI agent **how to behave** when doing this kind of research.
+- The MCP server gives the AI agent **tools it can actually call**, such as `youtube_research`, `youtube_transcript`, and `youtube_comments`.
+
+The best setup is to use both: the skill instructions guide the assistant, and MCP lets the assistant automatically search YouTube, extract transcripts, use audio fallback, read comments, and return a final answer without making the user manage files manually.
+
 ## Why this exists
 
 Normal AI research often misses information from:
